@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: mephisto;
+    src: url(/fonts/mephisto.ttf);
+  }
+
+@font-face{
+    font-family: oregano;
+    src: url(/fonts/oregano.ttf);
+  }
+
+  @font-face {
+    font-family: palatino;
+    src: url(/fonts/palatino.ttf)
+  }
+
+/*Home section start*/
+.home{
+    position: relative;
+    margin-bottom: 3vw;
+}
+
+.home img{
+    width: 100%;
+    height: 48vw;
+}
+
+.home .contents{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.contents .content-up{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.contents .logo{
+    width: 55%;
+    /* background-color: red; */
+}
+
+.contents .logo img{
+    height: 6vw;
+    width: 9vw;
+    margin: 1vw 2vw;
+   
+}
+
+.menu{
+    /* background-color: red; */
+    width: 50%;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.25vw;
+}
+
+.menu ul li{
+    list-style: none;
+}
+
+.menu ul li a{
+    font-size: 2vw;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.page .home .contents .content{
+    /* background-color: red; */
+    width: 60%;
+    margin: 5% auto;
+    text-align: center;
+    padding: 3vw;
+    color: #fff;
+    letter-spacing: .1vw;
+}
+
+.page .home .contents .content h1{
+    font-size: 3.25vw;
+    font-family: 'Potta One', cursive;
+}
+
+.page .home .contents .content h3{
+    font-size: 2.15vw;
+    font-family: 'Sofia', cursive;
+}
+
+.page .home .contents .content button{
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    border: .1vw solid #000;
+    border-radius:20%;
+    margin-top: 1.5vw;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-family: 'Montaga', serif;
+}
+
+.page .home .contents .content button .fa{
+    margin-left: 1vw;
+}
+/*Home section end*/
+
+/*Courses section start*/
+.courses .courses-flex{
+    display: flex;
+    margin: 3vw 5vw 5vw;
+    justify-content: space-evenly;
+}
+
+.courses .courses-flex .course{
+    border: solid black .2vw;
+}
+
+.courses .courses-flex .course .course-box .img img{
+    width: 25vw;
+    height: 15vw;
+    margin: auto;
+}
+
+.courses .courses-flex .course .course-box .course-content{
+    margin: .5vw 1vw 2vw;
+}
+
+.courses .courses-flex .course .course-box .course-content h3{
+    font-size: 2vw;
+    font-family: 'Montaga', serif;
+}
+
+.courses .courses-flex .course .course-box .course-content .course-para{
+    font-size: 1.2vw;   
+    font-family: oregano;
+}
+
+.courses .courses-flex .course .course-box .course-content button{
+    font-size: 1.1vw;
+    padding: .25vw 1vw;
+    background-color: transparent;
+    border: .1vw solid black;
+    font-family: 'Montaga', serif;
+    margin-top: 1vw;
+    color: white;
+    background-color: black;
+}
+/*Courses section end*/
+
+/*About us section start*/
+.about .about-content{
+    margin: 1vw 10vw 3vw;
+}
+
+.about .about-content p{
+    text-indent: 10%;
+    text-align: justify;
+    font-family: oregano;
+    font-size: 1.75vw;
+}
+/*About us section end*/
+
+/*Contact section start*/
+.contact .icons{
+    width: 30%;
+    /* background-color: red; */
+    margin:  3vw auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact .fa{
+    font-size: 3vw;
+    /* margin: 2vw; */
+}
+/*Contact section end*/
+.contact form{
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 5vw;
+}
+
+.contact .form{
+    margin: 2vw 10vw;
+}
+
+.contact .form div{
+    margin-bottom: 3vw;
+}
+
+.contact .form form label{
+    font-size: 1.5vw;
+}
+
+.contact .form form label, input, textarea{
+    font-family: palatino;
+}
+
+.contact .form form input{
+    height: 2.5vw;
+    width: 20vw;
+}
+
+.contact .form form input, textarea{
+    padding: .25vw .25vw;
+    margin-left: 1vw;
+    font-size: 1.2vw;
+    border: .2vw solid black;
+}
+
+/*Combine section start*/
+.title{
+    font-size: 4vw;
+    text-align: center;
+    /* background-color: red; */
+    padding: 2vw 0;
+    font-family: mephisto;
+    letter-spacing: .2vw;
+}
+/*Combine section end*/
