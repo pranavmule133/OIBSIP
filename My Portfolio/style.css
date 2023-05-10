@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+/*combine start*/
+@font-face {
+  font-family: mephisto;
+  src: url(/fonts/mephisto.ttf);
+}
+
+@font-face {
+  font-family: bay;
+  src: url(/fonts/bay.ttf);
+}
+
+@font-face {
+  font-family: palatino;
+  src: url(/fonts/palatino.ttf);
+}
+
+.title {
+  font-size: 3.25vw;
+  font-family: 'Potta One', cursive;
+  font-weight: 100;
+  letter-spacing: .25vw;
+}
+
+.para {
+  font-size: 1vw;
+  font-family: 'montaga', serif;
+}
+
+.mg-div {
+  margin: 5vw 0;
+}
+
+.mg-t {
+  margin: 2vw 5vw .75vw;
+}
+
+:root {
+  --red: #ff0040;
+  --black: #262626;
+}
+
+.btn {
+  font-family: palatino;
+  background-color: transparent;
+  padding: .75vw 0;
+  color: white;
+  border: .15vw solid white;
+  margin: 0;
+  width: 8vw;
+  font-size: 1vw;
+  border-radius: 5%;
+}
+
+.btn:hover {
+  color: black;
+  background-color: white;
+  transition: .5s all ease;
+  border: .15vw solid black;
+}
+/*combine start*/
+
+/*home start*/
+.home {
+  position: relative;
+  width: 100%;
+  height: 50vw;
+}
+
+.home img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.home .home-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home .home-2 .home-menu .logo {
+  position: absolute;
+  left: 5vw;
+  top: 1.5vw;
+  width: 15vw;
+  height: 5vw;
+}
+
+.home .home-2 .home-menu .menu {
+  position: absolute;
+  right: 7.5vw;
+}
+
+.home .bars {
+  display: none;
+}
+
+.home .home-2 .home-menu .menu ul {
+  display: flex;
+  margin-top: 2.5vw;
+}
+
+.home .home-2 .home-menu .menu ul li {
+  list-style: none;
+}
+
+.home .home-2 .home-menu .menu ul li a {
+  color: white;
+  font-family: 'Montaga', serif;
+  font-size: 1.5vw;
+  display: black;
+  padding: 1vw 2vw;
+}
+
+.home .home-2 .home-content {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  font-family: bay;
+  font-size: 3vw;
+  font-weight: 600;
+  color: white;
+}
+
+.home .home-2 .home-content span {
+  color: rgb(255, 0, 0);
+}
+
+/*home end*/
+
+/*about start*/
+.about h1 {
+  margin: 0;
+}
+
+.about .about-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 3vw 0;
+  padding: 1vw 3vw;
+  width: 100%;
+}
+
+.about-flex .img {
+  height: 40vw;
+  width: 35%;
+  margin: 0 2vw;
+}
+
+.about-flex .img img {
+  height: 35vw;
+  width: 100%;
+  margin: auto;
+}
+
+.about-flex .img-2 {
+  display: none;
+}
+
+.about-flex .about-content {
+  width: 65%;
+  padding: 0 3vw;
+  margin-top: 4vw;
+}
+
+.about-tabs-content .tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1vw 0 1vw 0;
+  font-family: palatino;
+}
+
+.about-tabs-content .tab {
+  font-size: 1.5vw;
+  font-family: palatino;
+  display: inline-block;
+  position: relative;
+  margin: 1vw 0 .5vw;
+}
+
+.tab-content{
+  margin-right: 2vw;
+}
+
+.content .justify {
+  text-align: justify;
+}
+
+.about-tabs-content .tab::after {
+  content: ' ';
+  height: .25vw;
+  width: 20%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: .5s ease all;
+}
+
+.about-tabs-content .tab:hover::after {
+  width: 100%;
+  transition: .5s ease all;
+}
+
+.about-flex .tab-content div p {
+  font-size: 1vw;
+}
+
+.about-flex .tab-content div span {
+  color: var(--red);
+  font-size: 1vw;
+}
+
+/*
+.about-flex .tabs-content p {
+  
+}
+*/
+.about-flex .tab-content{
+  margin-left: 0;
+  text-align: left;
+}
+
+.about-flex .h-1:active .experience {
+  display: none;
+}
+
+/*about end*/
+
+/*services start*/
+.services {
+  margin-top: 6vw;
+}
+
+.services .services-flex {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.services-flex .card {
+  border-radius: 5%;
+  height: 18.5vw;
+  width: 26vw;
+  margin: 2vw 0;
+  background-color: var(--black);
+  position: relative;
+  z-index: 1;
+}
+
+.services-flex .cover {
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-color: var(--red);
+  border-radius: 5%;
+}
+
+.services-flex .card:hover .cover {
+  height: 100%;
+  z-index: -1;
+  transition: .1s all ease-out;
+}
+
+.services-flex .icon {
+  height: 40%;
+}
+
+.services-flex .icon i {
+  font-size: 3.5vw;
+  margin: 2vw 0 1vw 3vw;
+}
+
+.card-content {
+  height: 60%;
+  margin: 1vw 3vw 2vw;
+}
+
+.services-flex .card h1 {
+  font-size: 2vw;
+  font-family: bay;
+}
+
+.services-flex .learn {
+  font-size: 1vw;
+  font-family: 'Montaga', serif;
+  margin-top: 2vw;
+}
+
+/*services end*/
+
+/*my work start*/
+.my-work-flex {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+}
+
+.my-work-flex .card {
+  height: 30vw;
+  width: 20vw;
+  margin: 2vw;
+  position: relative;
+}
+
+.my-work-flex .card img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10%;
+}
+
+.my-work-flex .cover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-image: linear-gradient(transparent, var(--red));
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.my-work-flex .card:hover .cover {
+  transition: .1s all ease;
+  height: 100%;
+}
+
+.my-work-flex .work-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+  width: 70%;
+  padding: 2vw 2vw;
+  text-align: center
+}
+
+.my-work-flex .work-content h4 {
+  font-size: 1.5vw;
+  font-family: bay;
+  margin-bottom: 1vw;
+}
+
+.my-work-flex .work-content i {
+  font-size: 1.25vw;
+  position: absolute;
+  border: solid .1vw white;
+  border-radius: 50%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1vw;
+  background-color: white;
+  color: var(--red);
+}
+
+.my-work .work-btn {
+  margin-left: calc(50% - 6vw);
+}
+
+/*my work end*/
+
+/*contact start*/
+.contact .contact-flex {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.contact .contact-content {
+  padding: 0 3vw;
+}
+
+.contact .contact-content .i-both span {
+  font-size: 1.25vw;
+  font-family: 'montaga', serif;
+  margin-left: 1vw;
+}
+
+.contact .contact-content i {
+  font-size: 1.25vw;
+}
+
+.contact .contact-content .social {
+  margin: .75vw 0 2.5vw;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25vw;
+}
+
+.contact .contact-content .phone,
+.email {
+  margin: 1vw 0;
+}
+
+.contact .contact-form {
+  padding: 0 3vw;
+  margin: 2vw 0;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .contact-form input {
+  height: 2vw;
+  width: 20vw;
+  margin-bottom: 2vw;
+}
+
+.contact .contact-form input,
+textarea {
+  font-size: 1vw;
+  background-color: var(--black);
+  border: .1vw solid white;
+  border-radius: 2.5%;
+  padding: 0 .35vw;
+  font-family: 'montaga', serif;
+  color: white;
+}
+
+.contact .contact-form textarea {
+  margin-bottom: 2vw;
+}
+
+::placeholder {
+  color: white;
+}
+
+.resume .rs {
+  width: 10vw;
+}
+
+/*contact end*/
+
+/*responsive start*/
+@media screen and (max-width: 540px) {
+
+  /*combine start*/
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 8vw;
+    text-align: center;
+    margin-bottom: 5vw;
+  }
+
+  .btn {
+    padding: .5vw 0;
+    width: 20vw;
+    font-size: 2vw;
+  }
+  /*combine end*/
+  
+  /*home start*/
+  .home{
+    margin-bottom: 20vw;
+  }
+  .home .bg-img {
+    display: none;
+  }
+  
+  .home .home-2 .home-content {
+    left: 7%;
+    top: 65%;
+    font-size: 5vw;
+  }
+  
+  .home .home-2 .home-menu .logo {
+    width: 25vw;
+    height: 10vw;
+    left: 5vw;
+    top: 1vw;
+  }
+
+  .home .home-2 .menu{
+    right: 0;
+  }
+
+  .home .home-2 .menu .menu-box {
+    position: absolute;
+    right: 0;
+    top: 4vw;
+  }
+
+  .home .home-2 .menu .menu-box .bars {
+    font-size: 5vw;
+    width: 120%;
+    display: block;
+  }
+
+  #list {
+    background-color: var(--black);
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    width: 25vw;
+    text-align: center;
+    padding: 2vw;
+    margin-top: 4.5vw;
+  }
+
+  #list.ok {
+    display: flex;
+  }
+
+  #list li a {
+    font-size: 2.5vw;
+    padding: 0 3vw;
+    margin: 3vw 2vw;
+    line-height: 2vw;
+    display: block;
+  }
+  /*home end*/
+
+  /*about start*/
+  .about .about-flex {
+    padding: 1vw 3vw;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .about-tabs-content .tabs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-flex .img {
+    height: 75vw;
+    width: 100%;
+  }
+
+  .about-flex .img img {
+    height: 100%;
+    width: 80%;
+  }
+
+  .about-flex .img-1 {
+    display: none;
+  }
+
+  .about-flex .img-2 {
+    display: block;
+  }
+
+  .about-flex .about-content {
+    width: 100%;
+    padding: 0 3vw;
+    margin-top: 4vw;
+  }
+  
+  .about-flex .about-content .tab {
+    font-size: 3vw;
+    margin-top: 3vw;
+    font-family: palatino;
+    display: inline-block;
+    position: relative;
+  }
+
+  .tab-content div{
+    display: flex;
+  }
+
+  .about-flex .justify{
+    margin-top: 2.5vw;
+    font-size: 2.5vw;
+  }
+
+  .about-flex .tab-content div span {
+  font-size: 2.25vw;
+  }
+
+  .about-flex .tab-content div p {
+  font-size: 2.25vw;
+  margin: 0;
+  margin-left: 1vw;
+}
+
+  /*about end*/
+
+  /*services start*/
+  .services {
+    margin-top: 2vw;
+  }
+
+  .services .services-flex {
+    width: 100%;
+    margin-top: 5vw;
+  }
+
+  .services-flex .card {
+    height: 45vw;
+    width: 65vw;
+    margin: 2vw auto 5vw;
+    padding: 3vw;
+  }
+
+  .services-flex .icon {
+    height: 50%;
+  }
+
+  .services-flex .icon i {
+    font-size: 8vw;
+    margin: 2vw 0 2vw 2vw;
+  }
+
+  .card-content {
+    height: 40%;
+    margin: 1vw 3vw 2vw;
+    width: 90%;
+  }
+
+  .services-flex .card h1 {
+    font-size: 4.5vw;
+  }
+
+  .card-content p {
+    font-size: 2.5vw;
+    margin-top: .5vw;
+  }
+
+  .services-flex .learn {
+    font-size: 2.5vw;
+    margin-top: 2vw;
+    margin-bottom: 0vw;
+  }
+
+  /*services end*/
+
+  /*my work start*/
+  .my-work-flex {
+    width: 60%;
+    margin: auto;
+  }
+
+  .my-work-flex .card {
+    height: 80vw;
+    width: 100%;
+    margin: 2vw 0 8vw;
+  }
+
+  .my-work-flex .work-content {
+    width: 85%;
+    height: 80%;
+  }
+
+  .my-work-flex .work-content h4 {
+    font-size: 5vw;
+    margin-top: 17.5vw;
+    margin-bottom: 3vw;
+  }
+
+  .my-work-flex .work-content p {
+    font-size: 3vw;
+  }
+
+  .my-work-flex .work-content i {
+    font-size: 3.5vw;
+    bottom: 5%;
+    padding: 3vw;
+  }
+
+  .my-work .work-btn {
+    margin-left: calc(50% - 10vw);
+    margin-top: -5vw;
+    margin-bottom: 10vw;
+  }
+
+  /*my work end*/
+
+  /*contact start*/
+  .contact .contact-flex {
+    margin: auto;
+    width: 70%;
+  }
+
+  .contact .contact-content {
+    padding: 2vw 5vw;
+    margin-bottom: 5vw;
+  }
+
+  .contact .contact-content span {
+    font-size: 3vw;
+    margin-left: 2vw;
+  }
+
+  .contact .contact-content i {
+    font-size: 3vw;
+  }
+
+  .contact .contact-content .social {
+    margin: 1.5vw 0 2.5vw;
+    width: 30%;
+  }
+
+  .contact .contact-content .phone,
+  .email {
+    margin: 1vw 0;
+  }
+
+  .contact .contact-form {
+    padding: 0 3vw;
+    margin: 2vw 0;
+  }
+
+  .contact .contact-form input {
+    height: 5vw;
+    width: 40vw;
+    margin-bottom: 3vw;
+  }
+
+  .contact .contact-form input,
+  textarea {
+    font-size: 2.5vw;
+    padding: 0 1vw;
+  }
+
+  .contact .contact-form textarea {
+    margin-bottom: 2vw;
+    width: 80%;
+    height: 10vw;
+  }
+
+  .resume .rs {
+    width: 20vw;
+    font-size: 2vw;
+  }
+
+  /*contact end*/
+
+}
+
+/*responsive end*/
