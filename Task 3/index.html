@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Temperature Converter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #select,
+    #submit,
+    #num {
+      font-family: 'Lora', serif;
+      border-radius: 3%;
+      font-size: 1.35vw;
+    }
+
+    .container {
+      background-color: #F99B7D;
+      width: 50%;
+      height: 17.5vw;
+      margin: 4.5vw auto 0;
+      text-align: center;
+      padding: 3vw 0 0;
+      box-shadow: -.25vw .25vw .5vw #000;
+      border-radius: 3%;
+    }
+
+    #num {
+      border: .1vw solid #000;
+      width: 17.5vw;
+      margin-right: 5vw;
+      height: 2.25vw;
+      padding: 0 .5vw;
+    }
+
+    ::placeholder {
+      color: black;
+    }
+
+    #select {
+      height: 2.25vw;
+      width: 12.5vw;
+    }
+
+    #submit {
+      padding: .35vw 1.5vw;
+      background-color: black;
+      border: .15vw solid #fff;
+      margin-top: 1.5vw;
+      color: #fff;
+
+    }
+
+    #print {
+      font-size: 1.75vw;
+      margin-top: 3vw;
+      font-family: 'Lora', serif;
+      font-weight: 400;
+    }
+
+    /*responsive start*/
+    @media all and (max-width: 540px) {
+      .container {
+        width: 80%;
+        height: 40vw;
+        font-size: 2vw;
+        margin: 7.5vw auto 0;
+        padding: 10vw 0;
+      }
+
+      #select,
+      #submit,
+      #num {
+        font-size: 2.75vw;
+      }
+
+      #num {
+        width: 35vw;
+        margin-right: 5vw;
+        height: 5vw;
+        padding: 0 .5vw;
+      }
+
+      #select {
+        height: 5vw;
+        width: 20vw;
+      }
+
+      #submit {
+        padding: .80vw 2.5vw;
+        margin-top: 4vw;
+      }
+
+      #print {
+        font-size: 4vw;
+        margin-top: 4.5vw;
+      }
+    }
+
+    /*responsive end*/
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form onsubmit="temp(); return false" name="myForm">
+      <input type="number" id="num" placeholder="Enter" required id="num">
+      <select id="select">
+        <option value="cel">Celsius</option>
+        <option value="fah">Fahrenheit</option>
+      </select>
+      <br>
+      <input type="submit" value="Convert" id="submit">
+    </form>
+    <p id="print"></p>
+  </div>
+  <script>
+
+    function temp() {
+      const num = document.getElementById("num").value;
+      const select = document.getElementById("select").value;
+      const value = parseInt(num);
+      const celToFah = (9 / 5 * value) + 32;
+      const fahToCel = (value - 32) * 5 / 9;
+
+      if (select == "cel") {
+        document.getElementById("print").innerHTML = celToFah.toFixed(2) + " fahrenheit";
+      }
+      else {
+        document.getElementById("print").innerHTML = fahToCel.toFixed(2) + " celsius";
+      }
+    }
+  </script>
+</body>
+
+</html>
